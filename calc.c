@@ -73,8 +73,7 @@ static Value parse_term(Parser* parser);
 static Value parse_expression(Parser* parser);
 static char* join_path(const char* directory, const char* filename);
 static char* get_base_name(const char* path, int strip_txt);
-static char* create_output_path(const char* input_path,
-                                const char* output_directory);
+static char* create_output_path(const char* input_path, const char* output_directory);
 static int evaluate_line(const char* line, size_t length, size_t file_offset, FILE* results, size_t* error_position);
 static int copy_results(FILE* results, FILE* output);
 static int write_output(const char* input_path, const char* output_directory, FILE* results, size_t error_position);
